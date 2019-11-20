@@ -4,8 +4,8 @@ if [ -e /usr/share/X11/xorg.conf.d/20-intel.conf ]
 then
   xrandr --addmode VIRTUAL1 $screen1
   xrandr --output VIRTUAL1 --mode $screen1 --left-of HDMI1
-  #xrandr --addmode VIRTUAL1 $screen2
-  #xrandr --output VIRTUAL1 --mode $screen2 --left-of HDMI1
+  xrandr --addmode VIRTUAL2 $screen2
+  xrandr --output VIRTUAL2 --mode $screen2 --left-of HDMI1
   # via https://bbs.archlinux.org/viewtopic.php?id=180904
   xrandr
   echo ""
