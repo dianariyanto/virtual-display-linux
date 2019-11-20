@@ -2,7 +2,7 @@
 
 Just a simple bash script that create some virtual display / monitor on linux OS for extended display via *TeamViewer* or *VNC server*
 
-![Virtual Display Linux (VDL Monitor)](https://raw.githubusercontent.com/dianariyanto/virtual-display-linux/blob/master/Screenshot.png)
+![Virtual Display Linux (VDL Monitor)](https://raw.githubusercontent.com/dianariyanto/virtual-display-linux/master/Screenshot.png)
 
 I'm using this simple script for extend my desktop pc to "2 external monitor" via teamviewer.
 
