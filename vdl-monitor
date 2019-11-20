@@ -1,0 +1,17 @@
+#!/bin/bash
+source vdl-monitor.conf
+if [ -e /usr/share/X11/xorg.conf.d/20-intel.conf ]
+then
+  xrandr --addmode VIRTUAL1 $screen1
+  xrandr --output VIRTUAL1 --mode $screen1 --left-of HDMI1
+  #xrandr --addmode VIRTUAL1 $screen2
+  #xrandr --output VIRTUAL1 --mode $screen2 --left-of HDMI1
+  # via https://bbs.archlinux.org/viewtopic.php?id=180904
+  xrandr
+  echo ""
+  echo "Done, Check your VDL Monitor on System Setting > Display"
+else
+  cp 20-intel.conf /usr/share/X11/xorg.conf.d/20-intel.conf
+  # via https://unix.stackexchange.com/questions/378373/add-virtual-output-to-xorg
+  echo "[vdl-monitor] You must logout from current session to finish setup"
+fi
