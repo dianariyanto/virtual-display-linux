@@ -1,5 +1,5 @@
 # Virtual Display Linux (VDL Monitor)
-[![HitCount](http://hits.dwyl.com/dianariyanto/virtual-display-linux.svg)]
+![HitCount](http://hits.dwyl.com/dianariyanto/virtual-display-linux.svg)
 
 Just a simple bash script that create some virtual display / monitor on linux OS for extended display via *TeamViewer* or *VNC server*
 
