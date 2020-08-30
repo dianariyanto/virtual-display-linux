@@ -8,17 +8,17 @@ then
   sleep 3s
   echo "add resolution $screen1"
 
-  xrandr --output VIRTUAL1 --mode $screen1 --right-of LVDS1
+  xrandr --output VIRTUAL1 --mode $screen1 --left-of LVDS1
   sleep 3s
   echo "start display VIRTUAL1 to $screen1"
 
-  xrandr --addmode VIRTUAL2 $screen2
-  sleep 3s
-  echo "add resolution $screen2"
+  #xrandr --addmode VIRTUAL2 $screen2
+  #sleep 3s
+  #echo "add resolution $screen2"
 
-  xrandr --output VIRTUAL2 --mode $screen2 --right-of LVDS1
-  sleep 3s
-  echo "start display VIRTUAL2 to $screen2"
+  #xrandr --output VIRTUAL2 --mode $screen2 --right-of LVDS1
+  #sleep 3s
+  #echo "start display VIRTUAL2 to $screen2"
 
   # via https://bbs.archlinux.org/viewtopic.php?id=180904
   
@@ -26,10 +26,10 @@ then
   sleep 3s
   echo ""
   echo "Done, Check your VDL Monitor on System Setting > Display"
-  sleep 10s
+  #sleep 10s
 else
   cp 20-intel.conf /usr/share/X11/xorg.conf.d/20-intel.conf
   # via https://unix.stackexchange.com/questions/378373/add-virtual-output-to-xorg
-  echo "[vdl-monitor] You must logout from current session to finish setup"
+  echo "[vdl-monitor] You must reboot or relogin current session to finish setup"
   sleep 10s
 fi
