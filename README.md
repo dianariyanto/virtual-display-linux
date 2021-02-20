@@ -75,6 +75,24 @@ You now success Add Fake Display with No Monitor is Plugged In!
 * Armbian 5.0 xrdp with Realvnc Client
 * Waiting your report here.
 
+## Not working on Nvidia GPU
+you need to adjust the configuration according to the graphics card you are using
+
+Default xorg config for intel
+
+File : 20-intel.conf
+```
+Section "Device"
+    Identifier "intelgpu0"
+    Driver "intel"
+    Option "VirtualHeads" "2"
+EndSection
+```
+need further confirmation if you can modify the configuration against other graphics cards. 
+
+
+https://github.com/dianariyanto/virtual-display-linux/issues/9 (not supported xorg config)
+
 ## Remote Client
 
 https://www.teamviewer.com/en/download/linux/
