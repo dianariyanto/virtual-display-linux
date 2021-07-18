@@ -73,6 +73,7 @@ You now success Add Fake Display with No Monitor is Plugged In!
 * Elementary OS 5.0 Juno based on Ubuntu 18.04 with *Teamviewer v.14.7.19.65*
 * Pop OS! 20.04 Default Share Screen with Remmina Desktop Client
 * Armbian 5.0 xrdp with Realvnc Client
+* Fedora 34 - Gnome 40 on Xorg with Deskreen
 * Waiting your report here.
 
 ## [UPDATED] Not working on Nvidia GPU
