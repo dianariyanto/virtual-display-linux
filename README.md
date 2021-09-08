@@ -10,6 +10,13 @@ Yes, you can add fake display monitor without real monitor attached!
 
 I'm using this simple script for extend my desktop pc to "2 external monitor" via teamviewer.
 
+
+# Device support
+
+Curently this VDL Monitor only work for intel CPUs with integrated graphics only, sorry 😞
+
+If you are using an Nvidia GPU, you can follow [this instruction](https://github.com/dianariyanto/virtual-display-linux/issues/9#issuecomment-786389065). 
+
 # Quick Setup
 
 1. Install teamviewer on both devices. (You also can use VNC to)
@@ -75,10 +82,6 @@ You now success Add Fake Display with No Monitor is Plugged In!
 * Armbian 5.0 xrdp with Realvnc Client
 * Fedora 34 - Gnome 40 on Xorg with Deskreen
 * Waiting your report here.
-
-## [UPDATED] Not working on Nvidia GPU
-
-This VDL Monitor only work for intel CPUs with integrated graphics. If you are using an Nvidia GPU, you can follow [this instruction](https://github.com/dianariyanto/virtual-display-linux/issues/9#issuecomment-786389065). 
 
 ## Remote Client
 
