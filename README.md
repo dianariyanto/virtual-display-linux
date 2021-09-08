@@ -88,3 +88,8 @@ You now success Add Fake Display with No Monitor is Plugged In!
 * https://www.teamviewer.com/en/download/linux/
 * https://www.realvnc.com/en/connect/download/viewer/
 * https://remmina.org/
+
+## Useful links
+* https://bbs.archlinux.org/viewtopic.php?id=180904
+* https://unix.stackexchange.com/questions/378373/add-virtual-output-to-xorg
+* https://github.com/dianariyanto/virtual-display-linux/issues/9#issuecomment-786389065
