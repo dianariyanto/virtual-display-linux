@@ -13,9 +13,15 @@ I'm using this simple script for extend my desktop pc to "2 external monitor" vi
 
 # Device support
 
-Curently this VDL Monitor only work for intel CPUs with integrated graphics only, sorry 😞
+Curently this **VDL Monitor only work for intel CPUs with integrated graphics only**, sorry 😞
 
 If you are using an Nvidia GPU, you can follow [this instruction](https://github.com/dianariyanto/virtual-display-linux/issues/9#issuecomment-786389065). 
+
+Or if you already made a mistake when trying this script on a device without an integrated intelhd gpu, which makes your device stuck on a black screen with blinking cursor, [this instruction](https://github.com/dianariyanto/virtual-display-linux/issues/16) might be useful for you to fix this problem.
+
+If you encounter a similar problem, you just need to delete `/usr/share/X11/xorg.conf.d/20-intel.conf` created by vdl-monitor to get your device booted normally again.
+
+
 
 # Quick Setup
 
