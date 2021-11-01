@@ -87,6 +87,7 @@ You now success Add Fake Display with No Monitor is Plugged In!
 * Pop OS! 20.04 Default Share Screen with Remmina Desktop Client
 * Armbian 5.0 xrdp with Realvnc Client
 * Fedora 34 - Gnome 40 on Xorg with Deskreen
+* Debian 11 - KDE Plazma with Deskreen
 * Waiting your report here.
 
 ## Remote Client
