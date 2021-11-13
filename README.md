@@ -88,6 +88,7 @@ You now success Add Fake Display with No Monitor is Plugged In!
 * Armbian 5.0 xrdp with Realvnc Client
 * Fedora 34 - Gnome 40 on Xorg with Deskreen
 * Debian 11 - KDE Plazma with Deskreen
+* Manjaro Rolling - Gnome 40 on Xorg with x11vnc (server) realvnc (client) adb (for better fluidity)
 * Waiting your report here.
 
 ## Remote Client
