@@ -24,7 +24,7 @@ if [ -e /usr/share/X11/xorg.conf.d/20-intel.conf ]; then
 		xrandr
 
 		xrandr --delmode VIRTUAL1 "$virtual1"
-		xrandr --output "$internal" --primary --mode "$eDP1"
+		xrandr --output "$internal" --primary --mode "$screen1"
 		xrandr
 		sleep 3
 
