@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# ### Dependencies : ###
+# x11vnc (vnc server)
+# android-tools (adb, to make an usb connection between the android device and the computer)
+# libnotify (to allow notifications, because it's the only way to see that the chaos is done)
+
+internal="eDP1"
+screen1="2048x1152"
+virtual1="1920x1200"
+
+if [ -e /usr/share/X11/xorg.conf.d/20-intel.conf ]; then
+	if [[ $1 == "stop" ]]; then
+		adb reverse --remove-all
+		killall x11vnc
+		sleep 3
+		
+		echo "Starting chaos"
+
+		xrandr --output VIRTUAL1 --off
+		# This usually does not work on the first time,
+		# but works like a charm second time
+		xrandr --output VIRTUAL1 --off
+		xrandr
+
+		xrandr --delmode VIRTUAL1 "$virtual1"
+		xrandr --output "$internal" --primary --mode "$eDP1"
+		xrandr
+		sleep 3
+
+		notify-send "You can touch your computer without any fear, this is done"
+		exit 0;
+
+	else
+		xrandr --addmode VIRTUAL1 "$virtual1"
+		#sleep 3s
+
+		xrandr --output VIRTUAL1 --mode "$virtual1" --left-of "$internal"
+		#sleep 3s
+
+		xrandr
+		sleep 3s
+
+		adb reverse tcp:5900 tcp:5900
+		x11vnc -clip "$virtual1"+0+0 -localhost -multiptr
+
+		echo "Done"
+	fi;
+else
+	echo -e "Section \"Device\"\n    Identifier \"intelgpu0\"\n    Driver \"intel\"\n    Option \"VirtualHeads\" \"2\"\nEndSection" > /usr/share/X11/xorg.conf.d/20-intel.conf
+	echo "[vdl-monitor] You must reboot or relogin current session to finish setup"
+	sleep 10s
+fi;
+
