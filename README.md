@@ -4,6 +4,8 @@ Just a simple bash script that create some virtual display / monitor on linux OS
 
 Yes, you can add fake display monitor without real monitor attached!
 
+⚠️⚠️⚠️⚠️ DISCLAIMER: Do with your own risk! ⚠️⚠️⚠️⚠️
+
 ![Virtual Monitor Linux](https://raw.githubusercontent.com/dianariyanto/virtual-display-linux/master/Screenshot2.png)
 
 ![Virtual Display Linux (VDL Monitor)](https://raw.githubusercontent.com/dianariyanto/virtual-display-linux/master/Screenshot.png)
