@@ -99,7 +99,7 @@ You now success Add Fake Display with No Monitor is Plugged In!
 3. Plug an USB cable between your two devices  
 3. b) Depending on the android version you may need to go to your notifications, and look for a notification about the USB connection to allow debugging.  
 4. Run `adb shell` on your Linux machine and approve the request on your android device  
-5. Configure the variables in the script, `internal` is your computer monitor, you should get it with `xrandr` and ``screen1`` and `virtual1` are the resolutions of the script  
+5. Configure the variables in the script, `internal` is your computer monitor, you should get it with `xrandr`. `screen1` and `virtual1` are the resolutions of the screens  
 6. start the script  
 7. open the VNC app on your android device  
 8. connect to `http://127.0.0.1:5900`  
