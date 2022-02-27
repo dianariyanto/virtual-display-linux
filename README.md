@@ -91,7 +91,7 @@ You now success Add Fake Display with No Monitor is Plugged In!
 - libnotify
 
 ##### On the android phone/tablet :
-- VNCviewer, or any other vnc viewer for android
+- [VNCviewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android), or any other vnc viewer for android
 
 ### Installation steps :
 1. Enable developer mode on the android phone/tablet by entering int settings -> info and tapping on the release number 5 times  
