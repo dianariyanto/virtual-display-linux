@@ -83,6 +83,29 @@ Check teamviewer client and select your virtual display act as external monitor.
 
 You now success Add Fake Display with No Monitor is Plugged In!
 
+# VNC + Android Setup
+
+### Dependencies :
+
+##### On the linux machine :
+- x11vnc
+- android-tools
+- libnotify
+
+##### On the android phone/tablet :
+- [VNCviewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android), or any other vnc viewer for android
+
+### Installation steps :
+1. Enable developer mode on the android phone/tablet by entering int settings -> info and tapping on the release number 5 times  
+2. Enable USB-debugging in developer settings on the android device  
+3. Plug an USB cable between your two devices  
+3. b) Depending on the android version you may need to go to your notifications, and look for a notification about the USB connection to allow debugging.  
+4. Run `adb shell` on your Linux machine and approve the request on your android device  
+5. Configure the variables in the script, `internal` is your computer monitor, you should get it with `xrandr`. `screen1` and `virtual1` are the resolutions of the screens  
+6. start the script  
+7. open the VNC app on your android device  
+8. connect to `http://127.0.0.1:5900`  
+
 ## Confirmed
 
 * Elementary OS 5.0 Juno based on Ubuntu 18.04 with *Teamviewer v.14.7.19.65*
@@ -90,6 +113,7 @@ You now success Add Fake Display with No Monitor is Plugged In!
 * Armbian 5.0 xrdp with Realvnc Client
 * Fedora 34 - Gnome 40 on Xorg with Deskreen
 * Debian 11 - KDE Plazma with Deskreen
+* Manjaro Rolling - Gnome 40 on Xorg with x11vnc (server) realvnc (client) adb (for better fluidity)
 * Waiting your report here.
 
 ## Remote Client
